@@ -1,0 +1,56 @@
+What is Selenium?
+
+Open-source suite for automating web browsers (web UI testing).
+Provides language bindings (Java, Python, C#, Ruby, JS, PHP, etc.) and browser drivers.
+Not for native desktop apps or native mobile apps (web-only automation).
+
+Where Selenium fits (comparison with other tools)
+
+Web (browser) applications: Selenium (widely used in industry).
+Desktop apps: tools like QTP/UFT (commercial; VBScript-based historically).
+Mobile apps (native/hybrid): Appium, Robotium, Calabash.
+API / Web services (REST / SOAP): Postman, SoapUI, Rest Assured.
+Database testing: SQL clients, DB-specific tools, or data frameworks (MySQL, Hadoop ecosystems).
+
+Selenium features / capabilities
+
+Multi-browser support: Chrome, Firefox, Edge, Safari, Opera, etc.
+Multi-language bindings: Java (.jar), C# (.dll), Ruby (gem), Python (package), JavaScript, PHP.
+Cross-platform: Windows, macOS, Linux (runs in CI, containers, cloud providers).
+Integrates with test frameworks, CI, reporting, and visual/CDP tooling.
+
+Selenium components (modern view)
+
+Selenium WebDriver: primary API to control browsers via W3C WebDriver protocol.
+Selenium IDE: browser extension for record-and-playback (quick prototypes).
+Selenium Grid: distribute/parallelize test execution across machines or cloud nodes.
+Selenium Manager: automates browser-driver discovery and management.
+
+Selenium history / evolution (concise)
+
+Selenium 1: IDE + RC (RC is deprecated).
+Selenium 2: introduced WebDriver (replaced RC as primary API).
+Selenium 3: matured WebDriver; transitioned toward W3C compatibility.
+Selenium 4 (current major line): full W3C WebDriver compliance, Grid rework, Selenium Manager, improved CDP/BiDi support.
+
+What is an API? (short)
+
+API = Application Programming Interface: a set of methods/commands a library exposes so your code can interact with it (e.g., WebDriver methods: get(), find_element(), click()).
+
+Limitations — what Selenium does NOT cover
+
+Cannot solve CAPTCHAs or handle real OTPs by design.
+Not for native mobile apps (use Appium instead).
+No built-in advanced reporting or visual-regression; integrate external tools.
+Tests can be brittle without robust locators and proper waiting strategies.
+
+Common tech stack when using Selenium (Java-centered example)
+
+Language & runtime: Core Java (or Python, C#, etc.)
+IDE: IntelliJ IDEA / Eclipse / VS Code
+Build tools: Maven / Gradle / Ant
+Test frameworks: JUnit / TestNG (or pytest / Mocha)
+Reporting: ExtentReports, Allure, or similar
+BDD: Cucumber (optional)
+CI/CD: Jenkins / GitHub Actions / GitLab CI / others
+Containerization / scaling: Docker, Kubernetes; cloud grids like BrowserStack, Sauce Labs

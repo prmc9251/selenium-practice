@@ -1,0 +1,36 @@
+1. Java Revision
+2. Selenium Introduction
+3. Browser Testing
+    3.1 ChromeBrowserTest
+    3.2 MultiBrowserTest
+    3.3 ChromeOptions
+
+4. Selenium Methods
+	4.1 get() – Opens the specified URL in the current browser.
+    4.2 maximise() – Maximizes the browser window.
+    4.3 implicitlyWait() – Sets a default wait time for locating elements before throwing an exception.
+    4.4 getTitle() – Returns the title of the current webpage.
+    4.5 getCurrentUrl() – Returns the URL of the current webpage.
+    4.6 getPageSource() – Returns the HTML source code of the current page.
+    4.7 navigate().to() – Navigates the browser to a specified URL.
+    4.8 navigate().back() – Moves back to the previous page in the browser history.
+    4.9 navigate().refresh() – Reloads the current page.
+    4.10 navigate().forward() – Moves forward to the next page in the browser history.
+    4.11 quit() – Closes all browser windows and ends the WebDriver session.
+    4.12 close() – Closes the current browser window.
+    4.13 findElement() – Locates and returns the first matching web element.
+    4.14 findElements() – Locates and returns a list of all matching web elements.
+    4.15 getText() – Retrieves the visible text of an element.
+    4.16 click() – Clicks on the referenced web element.
+    4.17 clear() – Clears the text from an input or editable field.
+    4.18 sendKeys() – Types the specified text or keystrokes into an input field or element.
+
+5. Locators
+    5.1 Id
+    5.2 Name
+    5.3 linkText
+    5.4 partialLinkText
+    5.5 className
+    5.6 tagName
+    5.7 CSS Selector
+    5.8 XPath

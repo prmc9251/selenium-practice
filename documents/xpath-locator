@@ -1,0 +1,43 @@
+What is XPath?
+
+XPath (XML Path Language) is a syntax used to locate elements on a web page using XML path expressions.
+It allows us to find elements based on their HTML DOM structure and navigate through nodes, elements,
+and attributes within the Document Object Model (DOM).
+
+Types of XPath
+1. Absolute XPath / Full XPath
+    Starts from the root node of the HTML document.
+    Example:  /html/body/div[6]/div[1]/div[2]/div[2]/form/input
+
+2. Relative XPath / Partial XPath
+    Directly targets the element without starting from the root.
+    Example: //input[@id='small-searchterms']
+
+General XPath Syntax
+ //tagName[@attribute='value']
+
+Difference Between Absolute XPath & Relative XPath
+Absolute XPath	                                 Relative XPath
+Starts from the root node	                     Does not start from the root; jumps directly to the element
+Begins with / (single slash)	                 Begins with // (double slash)
+Uses only tags/nodes	                         Uses attributes, functions, and conditions
+
+XPath Options / Functions
+or               //tagName[@attribute='value' or @attribute = 'value']
+and              //tagName[@attribute='value' and @attribute = 'value']
+contains()       //tagName[contains(@attribute, 'value')]
+starts-with()    //tagName[starts-with(@attribute, 'value')]
+text()           //tagName[text() = 'value']
+Chained XPath    //tagName[@attribute = 'value']//tagName[@attribute = 'value']
+
+
+XPath Axes
+self                //tag[@attr='value']/self::tag
+parent              //tag[@attr='value']/parent::parentTag
+child               //tag[@attr='value']/child::childTag
+ancestor            //tag[@attr='value']/ancestor::ancestorTag
+descendant          //tag[@attr='value']/descendant::descendantTag
+following           //tag[@attr='value']/following::tag
+following-sibling   //tag[@attr='value']/following-sibling::tag
+preceding           //tag[@attr='value']/preceding::tag
+preceding-sibling   //tag[@attr='value']/preceding-sibling::tag
