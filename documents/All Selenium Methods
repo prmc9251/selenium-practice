@@ -1,0 +1,58 @@
+1 get()                 – Opens the specified URL in the current browser.
+2 maximise()            – Maximizes the browser window.
+3 implicitlyWait()      – Sets a default wait time for locating elements before throwing an exception.
+4 getTitle()            – Returns the title of the current webpage.
+5 getCurrentUrl()       – Returns the URL of the current webpage.
+6 getPageSource()       – Returns the HTML source code of the current page.
+7 navigate().to()       – Navigates the browser to a specified URL.
+8 navigate().back()     – Moves back to the previous page in the browser history.
+9 navigate().refresh()  – Reloads the current page.
+10 navigate().forward() – Moves forward to the next page in the browser history.
+11 quit()               – Closes all browser windows and ends the WebDriver session.
+12 close()              – Closes the current browser window.
+13 findElement()        – Locates and returns the first matching web element.
+14 findElements()       – Locates and returns a list of all matching web elements.
+15 getText()            – Retrieves the visible text of an element.
+16 click()              – Clicks on the referenced web element.
+17 clear()              – Clears the text from an input or editable field.
+18 sendKeys()           – Types the specified text or keystrokes into an input field or element.
+
+Alert Interface
+
+19 switchTo().alert()   – Switches the driver focus to the active browser alert.
+20 accept()             – Clicks the “OK” button on an alert.
+21 dismiss()            – Clicks the “Cancel” button on an alert.
+22 alert().getText()    – Retrieves the text displayed on the alert.
+23 alert().sendKeys()   – Enters text into a prompt-type alert.
+
+Select Class
+
+24 selectByValue()       – Selects a dropdown option by its “value” attribute.
+25 selectByVisibleText() – Selects a dropdown option by its displayed text.
+26 selectByIndex()       – Selects a dropdown option by its index number.
+27 getOptions()          – Returns all available options inside a dropdown list.
+
+8. SwitchToWindowAndIframe
+
+28 getWindowHandle()     – Returns the ID of the current browser window.
+29 getWindowHandles()    – Returns IDs of all open browser windows.
+30 switchTo().window()   – Switches WebDriver focus to a specific window using its ID.
+31 switchTo().frame()    – Switches focus to a specific iframe by index, name, or WebElement.
+32 defaultContent()      – Switches back to the main page content from any frame.
+
+JavaScriptExecutor
+
+33 executeScript()       – Executes JavaScript code inside the browser window.
+
+Action Class (Mouse Operations)
+
+34 moveToElement()       – Performs a mouse hover over a target element.
+35 contextClick()        – Performs a right-click on a target element.
+36 dragAndDrop()         – Drags an element and drops it onto another element.
+37 dragAndDropBy()       – Drags an element by a specified x/y offset (used for sliders).
+
+Selenium Waits
+
+38 Implicit Wait        – Instructs WebDriver to wait for elements to appear before throwing an exception.
+39 Explicit Wait        – Waits for a specific condition to be true before proceeding.
+40 Fluent Wait          – Repeatedly checks a condition at defined intervals until timeout.
