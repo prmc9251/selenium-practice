@@ -4,6 +4,7 @@ import browsertesting.BaseTest;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
 
 /**
  * Created by Jay Vaghani
@@ -20,6 +21,7 @@ public class LocatorDemo6 extends BaseTest {
     @Test
     public void locatorDemo6() {
         // CSS Selector
+        driver.findElement(By.cssSelector("input#newsletter-email")).sendKeys("Mobile");
 
     }
 

@@ -28,10 +28,10 @@ public class TestFluentWait extends Utility {
     @Test
     public void fluentWaitExample() {
         // Click on consent Button
-        clickOnElement(By.xpath("//button[@aria-label='Consent']"));
+//        clickOnElement(By.xpath("//button[@aria-label='Consent']"));
 
         // Click on AddTextBox1 Button
-        clickOnElement(By.id("btn2"));
+//        clickOnElement(By.id("btn2"));
 
         // Use Fluent wait
         Wait<WebDriver> wait =

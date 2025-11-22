@@ -4,6 +4,7 @@ import browsertesting.BaseTest;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
 
 /**
  * Created by Jay Vaghani
@@ -21,24 +22,31 @@ public class LocatorDemo4 extends BaseTest {
     public void locatorDemo4(){
         //Relative xpath
         //tagName[@attribute='value']
+        driver.findElement(By.xpath("//input[@id='small-searchterms']")).sendKeys("Mobile");
 
         // xpath with or
         //tagName[@attribute='value' or @attribute = 'value']
+        driver.findElement(By.xpath("//input[@id='small-searchterms' or @name= 'q']")).sendKeys("Mobile");
 
         // xpath with and
         //tagName[@attribute='value' and @attribute = 'value']
+        driver.findElement(By.xpath("//input[@id='small-searchterms' and @name= 'q']"));
 
         // xpath with starts-with()
         //tagName[starts-with(@attribute, 'value')]
+        driver.findElement(By.xpath("//input[starts-with(@id,'sma')]"));
 
         // xpath with contains()
         //tagName[contains(@attribute, 'value')]
+        driver.findElement(By.xpath("//input[contains(@id,'search')]"));
 
         //xpath with text()
         //tagName[text() = 'value']
+        driver.findElement(By.xpath("//a[text()='Log in']"));
 
         // xpath with chained
         //tagName[@attribute = 'value']//tagName[@attribute = 'value']
+        driver.findElement(By.xpath("//div[@class ='search-box']//input[@id='small-searchterms']"));
 
     }
 
