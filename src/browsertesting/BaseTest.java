@@ -28,7 +28,7 @@ public class BaseTest {
         }
         driver.get(baseUrl);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
     }
 
     public void closeBrowser(){

@@ -1,0 +1,77 @@
+🚨 Common Selenium Exceptions
+
+1. NoSuchElementException
+
+Raised when an element cannot be found on the page.
+
+2. TimeoutException
+
+Thrown when a command does not complete in the specified time (e.g., waiting for an element).
+
+3. StaleElementReferenceException
+
+Occurs when a referenced element is no longer attached to the DOM (e.g., page refreshed).
+
+4. ElementNotInteractableException
+
+The element exists but cannot be interacted with (hidden, covered, etc.).
+
+5. ElementNotSelectableException
+
+Element cannot be selected (e.g., disabled dropdown option).
+
+6. NoSuchWindowException
+
+Window handle doesn’t exist.
+
+7. NoSuchFrameException
+
+Frame with the given name/index cannot be found.
+
+8. NoSuchAttributeException
+
+The requested element attribute is missing.
+
+9. ElementClickInterceptedException
+
+Click is prevented because another element intercepts the click.
+
+10. MoveTargetOutOfBoundsException
+
+Mouse movement attempted outside the document boundaries.
+
+11. InvalidSelectorException
+
+Syntax error in the selector (CSS/XPath).
+
+12. InvalidArgumentException
+
+Invalid argument passed (wrong data type or value).
+
+13. JavascriptException
+
+Thrown when JavaScript executed from WebDriver fails.
+
+14. WebDriverException
+
+Base-level exception for WebDriver-related issues (driver crash, missing binary, etc.).
+
+15. SessionNotCreatedException
+
+Driver failed to create a session (version mismatch, browser not compatible).
+
+16. UnexpectedAlertPresentException
+
+Operation cannot proceed due to an unexpected alert.
+
+17. NoAlertPresentException
+
+Thrown when switching to an alert that does not exist.
+
+18. InvalidCookieDomainException
+
+Cookie domain mismatch.
+
+19. UnableToSetCookieException
+
+WebDriver failed to set a cookie.

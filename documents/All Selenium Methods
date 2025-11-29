@@ -56,3 +56,7 @@ Selenium Waits
 38 Implicit Wait        – Instructs WebDriver to wait for elements to appear before throwing an exception.
 39 Explicit Wait        – Waits for a specific condition to be true before proceeding.
 40 Fluent Wait          – Repeatedly checks a condition at defined intervals until timeout.
+
+41 is_selected()        - Checks whether an element is selected.
+42 is_enabled()         - Returns True if the element is enabled (can be interacted with).
+43 is_displayed()       - Checks if an element is visible on the page.
